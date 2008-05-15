@@ -1,0 +1,18 @@
+{% extends "base.tmpl" %}
+{% block title %} - {{ year.year }} - Theme Camps{% endblock %}
+{% block content %}
+{% ifnotequal previous 1985 %}
+<a href='/{{ previous }}/themecamps/'><< {{ previous }}</a>
+{% endifnotequal %}
+<font size=+3><b>{{ year.year }}</b></font>
+{% ifnotequal next 2009 %}
+<a href='/{{ next }}/themecamps/'> {{ next }}>></a>
+{% endifnotequal %}
+<h2>Theme Camps</h2>
+<ul>
+{% for theme_camp in theme_camps %}
+<li><a href='/{{ year.year }}/themecamp/{{theme_camp.id }}/'>{{ theme_camp.name }}</a></li>
+{% endfor %}
+</ul>
+{% endblock %}
+
