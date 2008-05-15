@@ -1,0 +1,44 @@
+Models
+	- The Man
+	- Art
+	- Vehicles
+	- Camp Architecture
+	- Infrastructure
+Images
+	- Ground
+	- Panorama
+	- Oblique Aerial
+	- Nadir Aerial
+	- Satellite
+Video
+	- Ground
+	- Air
+Audio
+	- Live Recordings
+	- Other Audio
+Vector
+	- Art Points
+	- Other Points
+	- Roads
+	- Fence
+	- Tracks
+	- Other Lines
+	- Theme Camp Polygons
+	- Other Polygons
+	- ATC Layout (Flight Traffic Patterns)
+Cartography
+	- City Maps
+Events
+	- Scheduled Events
+	- ATC Log (Airplane Movements)
+	- Police Log
+	- Rangers Log
+	- Emergency Services Log
+Documents
+	- Official
+	- Participant (Flyers etc)
+Other
+	- DPW Moop
+	- Census
+	- Missed Connections
+Avatars

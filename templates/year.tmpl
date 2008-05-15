@@ -1,0 +1,26 @@
+{% extends "base.tmpl" %}
+{% block title %} - {{ year.year }} {% endblock %}
+{% block content %}
+{% ifnotequal previous 1985 %}
+<a href='/{{ previous }}/'><< {{ previous }}</a>
+{% endifnotequal %}
+<font size=+3><b>{{ year.year }}</b></font>
+{% ifnotequal next 2009 %}
+<a href='/{{ next }}/'> {{ next }}>></a>
+{% endifnotequal %}
+<br />
+<img src='/data/{{ year.year }}/{{ year.year }}.gif'>
+<ul>
+<li><b>Location:</b> {{ year.location }}</li>
+<li><b>Theme:</b> {{ year.theme }}</li>
+</ul>
+<h2><a href='/{{ year.year }}/themecamps/'>Theme Camps</a></h2>
+<h2><a href='/{{ year.year }}/art_installations/'>Art Installations</a></h2>
+<h2>Streets</h2>
+<ul>
+{% for street in streets %}
+<li>{{ street.name }}</li>
+{% endfor %}
+</ul>
+{% endblock %}
+

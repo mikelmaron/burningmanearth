@@ -1,0 +1,18 @@
+{% extends "base.tmpl" %}
+{% block title %} - {{ year.year }} - Art Installations{% endblock %}
+{% block content %}
+{% ifnotequal previous 1985 %}
+<a href='/{{ previous }}/art_installations/'><< {{ previous }}</a>
+{% endifnotequal %}
+<font size=+3><b>{{ year.year }}</b></font>
+{% ifnotequal next 2009 %}
+<a href='/{{ next }}/art_installations/'> {{ next }}>></a>
+{% endifnotequal %}
+<h2>Art Installations</h2>
+<ul>
+{% for art_installation in art_installations %}
+<li><a href='/{{ year.year }}/art_installation/{{art_installation.slug }}/'>{{ art_installation.name }}</a></li>
+{% endfor %}
+</ul>
+{% endblock %}
+
